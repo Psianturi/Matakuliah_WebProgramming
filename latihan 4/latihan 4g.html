@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+</head>
+<script language="javascript">
+	function test () {
+	var a=document.kirim.T1.value
+	var b=document.kirim.T2.value
+	var val1=parseInt(a)
+	var val2=parseInt(b)
+	document.write("<br>"+"Perkalian : "+val1+" * "+val2+" = ")
+	document.write(val1*val2)
+	document.write("<br>"+"Pembagian : "+val1+" / "+val2+" = ")
+	document.write(val1/val2)
+	document.write("<br>"+"Penjumlahan : "+val1+" + "+val2+" = ")
+	document.write(val1+val2)
+	document.write("<br>"+"Pengurangan : "+val1+" - "+val2+" = ")
+	document.write(val1-val2)
+	document.write("<br>"+"modulus : "+val1+" % "+val2+" = ")
+	document.write(val1%val2)
+}
+</script>
+<body>
+	<form method="post" name="kirim">
+		<pre>
+			Masukan Bil-1 : <input type="text" name="T1">
+			Masukan Bil-2 : <input type="text" name="T2">
+		</pre>
+		<br/>
+		<input type="button" name="button1" value="Aritmathic" onclick="test()">
+</body>
+</html>

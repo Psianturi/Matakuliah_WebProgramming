@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh for Berkalang</title>
+</head>
+<body>
+	<pre>
+<script type="text/javascript">
+	var baris, i=0;
+	var nilai_prompt = prompt("Tinggi: ",5);
+	var tinggi = parseInt(nilai_prompt);
+
+	for(baris=1; baris<=tinggi; baris++){
+		//buat sejumlah spasi
+		for(i=1; i<=tinggi-baris; i++){
+			document.write(" "); //karakter spasi
+		}
+		//tampilkan*
+		for(i=1;i<2*baris; i++){
+			document.write("*"); 
+		}
+		//pindah baris
+		document.write("\n");
+	}
+</script>
+</pre>
+</body>
+</html>

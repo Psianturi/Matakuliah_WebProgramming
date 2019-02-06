@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script language="javascript">
+	function test () {
+	var a=document.kirim.T1.value
+	var b=document.kirim.T2.value
+	var c=document.kirim.T3.value
+	var val1=parseInt(a)
+	var val2=parseInt(b)
+	var val3=parseInt(c)
+	var akhir=(val1*30/100)+(val2*30/100)+(val3*40/100)
+	var grade=""
+	var keterangan=""
+	if (akhir >=80){
+			keterangan = "Lulus";
+			grade = "A"
+		}
+	else if (akhir >=70) {
+			keterangan = "Lulus";
+			grade = "B"
+		}
+	else if (akhir >=56){
+			keterangan = "Lulus";
+			grade = "C"
+		}
+	else if (akhir >=45){
+			keterangan = "Tidak Lulus";
+			grade = "D"
+		}
+	else if (akhir <45){
+			keterangan = "Tidak Lulus";
+			grade = "E"
+		}
+	else 
+			keterangan = "tidak Lulus";
+	document.write(" Akhir : " + akhir+"<br/>")
+	document.write(" Nilai Tugas : " +val1+"<br/>")
+	document.write(" Nilai UTS   : " +val2+"<br/>")
+	document.write(" Akhir UAS   : " +val3+"<br/>")
+	document.write(" grade : " + grade+"<br/>");
+	document.write(" Keterangan : " + keterangan+"<br/>");
+	
+	}
+</script>
+<body>
+	<form method="post" name="kirim">
+		<pre>
+			Nilai Tugas: <input type="text" name="T1">
+			Nilai UTS : <input type="text" name="T2">
+			Nilai UAS : <input type="text" name="T3">
+		</pre>
+		<br/>
+		<input type="button" name="button1" value="Proses" onclick="test()">
+</body>
+</html>
